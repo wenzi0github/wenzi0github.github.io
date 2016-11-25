@@ -2,24 +2,27 @@
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height(), garden_timer;
+var offsetX, offsetY;
+
+function resize(){
+	if( clientWidth<500 ){
+		$('.show').css('height', clientWidth);
+	}
+}
+resize()
 
 $(function () {
     // setup garden
-	$loveHeart = $("#loveHeart");
-	var offsetX = $loveHeart.width() / 2;
-	var offsetY = $loveHeart.height() / 2 - 55;
+	$loveHeart = $(".show");
+	offsetX = $loveHeart.width() / 2;
+	offsetY = $loveHeart.height() / 2 - 45;
     $garden = $("#garden");
     gardenCanvas = $garden[0];
-	// gardenCanvas.width = '400';
- //    gardenCanvas.height = '650';
+	gardenCanvas.width = clientWidth;
+    gardenCanvas.height = clientWidth;
     gardenCtx = gardenCanvas.getContext("2d");
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
-	
-	$("#content").css("width", $loveHeart.width() + $("#code").width());
-	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
-	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
-	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
 
     // renderLoop
     garden_timer = setInterval(function () {
@@ -28,17 +31,23 @@ $(function () {
 });
 
 function getHeartPoint(angle) {
+	var multiple = 1;
+	if( clientWidth<500 ){
+		multiple = clientWidth/800;
+	}
+
 	var t = angle / Math.PI;
-	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
-	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+	var x = 19.5 * multiple * (16 * Math.pow(Math.sin(t), 3));
+	var y = - 20 * multiple * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
 	return new Array(offsetX + x, offsetY + y);
 }
 
+var animationTimer = null;
 function startHeartAnimation() {
 	var interval = 50;
 	var angle = 10;
 	var heart = new Array();
-	var animationTimer = setInterval(function () {
+	animationTimer = setInterval(function () {
 		var bloom = getHeartPoint(angle);
 		var draw = true;
 		for (var i = 0; i < heart.length; i++) {
@@ -54,14 +63,33 @@ function startHeartAnimation() {
 			garden.createRandomBloom(bloom[0], bloom[1]);
 		}
 		if (angle >= 30) {
-			clearInterval(animationTimer);
-			clearInterval(garden_timer);
-			$('.heart').show();
-			auto();
+			heart_end();
 		} else {
 			angle += 0.2;
 		}
 	}, interval);
+}
+
+function heart_end(){
+	clearInterval(animationTimer);
+	clearInterval(garden_timer);
+	$('.heart').show();
+	auto();
+
+	setTimeout(function(){
+		$("#typed").typed({
+		    strings: ["今天，10月26^1200\n是你28岁的生日^1200\n我们在2016年3月26日相识，^1200\n我们已经相识7个月29天，一共244天^1200\n\与你一见如故，是我今生最美丽的相遇。^1200\n\与你一诺相许，是我素色年华里最永恒的风景。^1200\n\一直想说，无论走到哪里，最想去的是你的身边。^1200\n\愿我们彼此相爱，一直到时间的尽头。^1200\n\我相信我们可以一起，等青丝变白发。^1200\n\你在，我在，就是海枯石烂。^1200\n\没有过多的华丽，只有一句我爱你，却能让彼此牵挂于心。"],
+		    // stringsElement: $('#typed-strings'),
+		    typeSpeed: 30,
+		    backDelay: 500,
+		    loop: false,
+		    contentType: 'html', // or text
+		    // defaults to false for infinite loop
+		    loopCount: false,
+		    callback: function(){  },
+		    resetCallback: function() { }
+		});
+	}, 600)
 }
 
 function getDaysInMonth(month) {
@@ -234,15 +262,4 @@ function auto(){
 	}, 5000)
 }
 
-$("#typed").typed({
-    strings: ["今天，10月26^1200\n是你29岁的生日^1200\n我们在2016年3月26日相识，^1200\n已经认识7个月29天，一共244天^1200\n\与你一见如故，是我今生最美丽的相遇。^1200\n\与你一诺相许，是我素色年华里最永恒的风景。^1200\n\一直想说，无论走到哪里，最想去的是你的身边。^1200\n\愿我们彼此相爱，一直到时间的尽头。^1200\n\我相信我们可以一起，等青丝变白发。^1200\n\你在，我在，就是海枯石烂。^1200\n\没有过多的华丽，只有一句我喜欢你，却能让彼此牵挂于心。"],
-    // stringsElement: $('#typed-strings'),
-    typeSpeed: 30,
-    backDelay: 500,
-    loop: false,
-    contentType: 'html', // or text
-    // defaults to false for infinite loop
-    loopCount: false,
-    callback: function(){  },
-    resetCallback: function() { }
-});
+

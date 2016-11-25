@@ -43,7 +43,7 @@
 			position: relative;
 			width: 670px;
 			height: 650px;
-			float: left;
+			float: right;
 		}
 		.pic{
 			height: 236px;
@@ -129,24 +129,91 @@
 		    color: #fff;
 		    display: none;
         }
+        @media screen and (min-width: 360px) and (max-width: 374px) {
+		    html {
+		        font-size:48px
+		    }
+		}
+
+		@media screen and (min-width: 375px) and (max-width: 383px) {
+		    html {
+		        font-size:50px
+		    }
+		}
+
+		@media screen and (min-width: 384px) and (max-width: 399px) {
+		    html {
+		        font-size:51.2px
+		    }
+		}
+
+		@media screen and (min-width: 400px) and (max-width: 413px) {
+		    html {
+		        font-size:53.33px
+		    }
+		}
+
+		/*@media screen and (min-width: 414px) {
+		    html {
+		        font-size:55.20px
+		    }
+		}*/
+
+		@media screen and (max-width: 319px) {
+		    html {
+		        font-size:42.66px
+		    }
+		}
+
+		/*@media screen and (max-device-height: 568px) {
+		    html {
+		        font-size:42.66px
+		    }
+		}*/
+		@media screen and (max-width: 414px) {
+			.main{
+				width: 100%;
+			}
+		    .logo img{
+		    	width: 7.5rem;
+		    }
+		    .txt{
+		    	font-size: 0.18rem;
+    			line-height: 0.42rem;
+    			float: none;
+    			padding-left: 0.6rem;
+    			min-height: 4.64rem;
+		    }
+		    .show{
+		    	float: none;
+		    	width: 100%;
+		    }
+		    .heart{
+		    	width: 100%;
+		    	margin-top: 1.08rem;
+		    }
+		    .pic{
+		    	height: 2.38rem;
+		    }
+		    .info{
+		    	margin-top: 1.64rem;
+		    }
+		    .info p:nth-child(1){
+				font-size: 0.42rem;
+			}
+			/*.info p:nth-child(2){
+				font-size: 0.42rem;
+			}*/
+			.info p:nth-child(2),.info p:nth-child(3){
+				font-size: 0.30rem;
+			}
+		}
 	</style>
 </head>
 <body>
 	<div class="content">
 		<div class="logo"><img src="http://ww3.sinaimg.cn/large/70f933e9jw1fa3msxdi7jg20ku09ggp0.gif" alt="生日快乐"></div>
-		
 		<div class="main clearfix">
-			<div class="txt">
-				<div class="type-wrap">
-		            <!-- <div id="typed-strings">
-		                <span>Typed.js is a <strong>jQuery</strong> plugin.</span>
-		                <p>It <em>types</em> out sentences.</p>
-		                <p>And then deletes them.</p>
-		                <p>Try it out!</p>
-		            </div> -->
-		            <span id="typed" style="white-space:pre;"></span>
-		        </div>
-			</div>
 			<div class="show">
 				<div class="heart">
 					<div class="pic">
@@ -161,6 +228,11 @@
 				</div>
 				<canvas id="garden" width="670" height="650">不支持canvas</canvas>
 			</div>
+			<div class="txt">
+				<div class="type-wrap">
+		            <span id="typed" style="white-space:pre;"></span>
+		        </div>
+			</div>
 		</div>
 	</div>
 	
@@ -169,8 +241,8 @@
 	</div> -->
 	
 	<script src="//mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script type="text/javascript" src="./garden.js"></script>
-	<script type="text/javascript" src="./typed.js"></script>
-	<script type="text/javascript" src="./index.js"></script>
+	<script type="text/javascript" src="./js/garden.js"></script>
+	<script type="text/javascript" src="./js/typed.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
