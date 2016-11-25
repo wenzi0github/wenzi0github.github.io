@@ -208,9 +208,47 @@
 				font-size: 0.30rem;
 			}
 		}
+		.overlay{
+			position: fixed;
+			z-index: 999;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.overlay .bg{
+			background: #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.7;
+			filter: alpha(opacity=70)
+		}
+		.overlay .con{
+			position: absolute;
+			z-index: 2;
+			width: 100px;
+			height: 50px;
+			color: #fff;
+			left: 50%;
+			top: 50%;
+			margin-top: -25px;
+			margin-left: -50px;
+		}
 	</style>
 </head>
 <body>
+	<!--[if lte IE 9]>
+	<div class="overlay">
+		<div class="bg"></div>
+		<div class="con">
+			您使用的浏览器版本过低，无法进行访问
+		</div>
+	</div>
+	<![endif]-->
+	
 	<div class="content">
 		<div class="logo"><img src="http://ww3.sinaimg.cn/large/70f933e9jw1fa3msxdi7jg20ku09ggp0.gif" alt="生日快乐"></div>
 		<div class="main clearfix">
