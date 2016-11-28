@@ -261,3 +261,6 @@ function auto(){
 		// }
 	}, 5000)
 }
+$('body').on('touchstart', function(){
+	document.getElementById('bgmusic').play();
+})
