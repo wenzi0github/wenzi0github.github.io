@@ -220,24 +220,10 @@ var data = [
 		date:'2016年7月2日'
 	},
 	{
-		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3majb53lj20qo0zk78j.jpg',
-		info:'你好，遇见了你',
-		date:'2016年3月26日'
-	},
-	{
-		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3meckqc2j20qo0zkdib.jpg'
-	},
-	{
-		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3medcr25j20qo0zktba.jpg'
-	},
-	{
 		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3mee9wozj20qo0zkdik.jpg'
 	},
 	{
 		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3mef2ml2j20zk0qogng.jpg'
-	},
-	{
-		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3mefm4uwj20qo0zkdib.jpg'
 	},
 	{
 		img:'http://ww4.sinaimg.cn/large/70f933e9jw1fa3megiklxj20qo0zkq6q.jpg'
