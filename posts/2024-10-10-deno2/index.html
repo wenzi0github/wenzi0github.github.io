@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Deno2.0 正式发布，向 Node.js 兼容 | 前端小茶馆</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="10 月 9 日，Deno 2.0 正式发布，本文就来看看该版本都带来了哪些更新！">
+    <meta name="generator" content="Hugo 0.135.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "蚊子">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://wenzi0github.github.io/posts/2024-10-10-deno2/">
+    
+
+    <meta property="og:url" content="https://wenzi0github.github.io/posts/2024-10-10-deno2/">
+  <meta property="og:site_name" content="前端小茶馆">
+  <meta property="og:title" content="Deno2.0 正式发布，向 Node.js 兼容">
+  <meta property="og:description" content="10 月 9 日，Deno 2.0 正式发布，本文就来看看该版本都带来了哪些更新！">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-10T16:13:46+08:00">
+    <meta property="article:modified_time" content="2024-10-10T16:13:46+08:00">
+
+  <meta itemprop="name" content="Deno2.0 正式发布，向 Node.js 兼容">
+  <meta itemprop="description" content="10 月 9 日，Deno 2.0 正式发布，本文就来看看该版本都带来了哪些更新！">
+  <meta itemprop="datePublished" content="2024-10-10T16:13:46+08:00">
+  <meta itemprop="dateModified" content="2024-10-10T16:13:46+08:00">
+  <meta itemprop="wordCount" content="218">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Deno2.0 正式发布，向 Node.js 兼容">
+  <meta name="twitter:description" content="10 月 9 日，Deno 2.0 正式发布，本文就来看看该版本都带来了哪些更新！">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        前端小茶馆
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Deno2.0 正式发布，向 Node.js 兼容</h1>
+      
+      <p class="tracked">
+        By <strong>蚊子</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-10-10T16:13:46+08:00">October 10, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray"><p>开源 JavaScript 和 TypeScript 运行时 Deno 于 10 月 9 日发布了 2.0 版本。</p>
+<blockquote>
+<p>Deno 创建于 2018 年，由 Node.js 之父 Ryan Dahl 发起，旨在为 JavaScript 和 TypeScript 提供一个安全、现代化的运行时环境。经过 4 年的发展，Deno 1.0 版本于 2020 年正式发布。</p>
+</blockquote>
+<p>尽管 Deno 一直在持续且稳定地进步，但其与 Node.js 之间存在的不兼容性，确实在一定程度上制约了其更广泛的应用。作为一款现代化的 JavaScript/TypeScript 工具链，Deno 在此前的版本中便已经彰显了其强大的实力，包括原生支持 TypeScript、内置的代码格式化与测试功能等。而此次推出的 2.0 版本，更是带来了一个令人瞩目的亮点——Deno 现已实现了与 Node.js 生态的全面向后兼容。</p>
+<p>任何基于 JavaScript 语言的工具链，都无法回避 Node.js 这些年构建的生态环境。Node.js 起步早，生态完善，项目众多。工具要足够优秀且迁移方便，才有动力让开发者从 Node.js 迁移到新的工具链上。</p>
+<p><code>Deno2.0</code> 的核心变革在于它全面拥抱了 Node.js 和 npm 生态。这一变革使得现有的 Node.js 应用程序能够无缝地迁移到 Deno 平台上运行。开发者们不仅可以在当前的 Node.js 项目中灵活引入 Deno，还能逐步采纳 Deno 提供的各种高效工具，例如利用 deno fmt 来格式化代码。</p>
+<p>此外，Deno 2.0 还原生支持了 <code>package.json</code> 和 <code>node_modules</code>，并推出了诸如 <code>deno install</code>、<code>deno add</code> 和 <code>deno remove</code> 等全新的包管理命令。这些改进使得在 Deno 中使用 npm 包的体验与在 Node.js 中几乎别无二致。Deno 团队自豪地表示，这种兼容性的实现不仅性能卓越，而且在依赖安装速度上甚至超越了 npm。</p>
+<p>值得一提的是，Deno 的标准库也已经趋于稳定，提供了数十个经过精心筛选和严格审核的实用模块。其中不少模块能够替代 npm 上广受欢迎的同类库，涵盖了测试框架、CLI 解析、基础工具集等多个领域。此外，Deno 2.0 还对私有 npm 源、monorepo 工作区等复杂场景提供了完善的支持。</p>
+<p>以下是 Deno 2.0 的主要更新：</p>
+<ul>
+<li><strong>Node.js 与 npm 的兼容性</strong>：Deno 2 实现了与 Node.js 和 npm 的全面向后兼容，使得现有的 Node 应用能够无缝地在 Deno 环境中运行。</li>
+<li><strong>包管理系统的革新</strong>：Deno 2 引入了 deno install、deno add 和 deno remove 等命令，进一步增强了其包管理功能，同时全面支持 package.json 和 node_modules，为开发者提供了更加便捷的包管理体验。</li>
+<li><strong>稳定且丰富的标准库</strong>：Deno 的标准库已经趋于成熟稳定，其中包含了多种经过严格审计的实用模块，为开发者提供了强大的支持。</li>
+<li><strong>私有 npm 注册表的无缝接入</strong>：Deno 2 支持私有 npm 注册表，只需通过 .npmrc 文件进行简单配置，即可轻松接入并使用。</li>
+<li><strong>工作区与 Monorepo 的全面支持</strong>：Deno 2 提供了对工作区和 Monorepo 的全面支持，使得开发者能够更加方便地管理多个项目的依赖关系。</li>
+<li><strong>现代 JavaScript 注册表 JSR 的引入</strong>：Deno 2 引入了现代、开源的 JavaScript 注册表 JSR，不仅支持 TypeScript 和模块加载，还为开发者提供了更加灵活和高效的包管理选项。</li>
+<li><strong>广泛的框架支持</strong>：Deno 2 支持多种流行的 JavaScript 框架，如 Next.js、Astro、Angular 等，使得开发者能够在 Deno 环境中轻松使用这些框架进行开发。</li>
+<li><strong>性能改进</strong>：Deno 在各种真实场景中进行了大量性能优化，提升了启动时间和处理复杂请求的能力。</li>
+<li>改进现有功能：
+<ul>
+<li>deno fmt 现在可以格式化 HTML、CSS 和 YAML。</li>
+<li>deno lint 增加了 Node 特定规则和快速修复。</li>
+<li>deno test 支持使用 node:test 编写的测试。</li>
+<li>deno doc 的 HTML 输出设计改进，搜索功能增强。</li>
+<li>deno compile 支持代码签名和 Windows 上的图标。</li>
+<li>deno serve 可以在多个核心上并行运行 HTTP 服务器。</li>
+</ul>
+</li>
+</ul>
+<p>尽管 Deno 在兼容性方面做出了诸多努力，但它始终坚持着“简约而不简单”的设计理念。用户仍然无需依赖任何配置文件即可运行 Deno 代码。新增的包管理命令也并非强制使用，而是为那些需要管理更复杂项目的用户提供了便利。Deno 团队明确表示，他们的目标并非取代 Node.js，而是为 JavaScript 社区提供一个更加现代、高效且功能全面的工具链，让 Web 开发变得更加轻松愉悦。</p>
+
+    </div>
+
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://wenzi0github.github.io/" >
+    &copy;  前端小茶馆 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
