@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>工具链极度内卷，留给开发者的性能优化手段已经不多了 | 前端小茶馆</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="留给开发者的性能优化手段已经不多了">
+    <meta name="generator" content="Hugo 0.135.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+      <meta name="author" content = "蚊子">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://wenzi0github.github.io/posts/2024/10-14-fe-fighting/">
+    
+
+    <meta property="og:url" content="https://wenzi0github.github.io/posts/2024/10-14-fe-fighting/">
+  <meta property="og:site_name" content="前端小茶馆">
+  <meta property="og:title" content="工具链极度内卷，留给开发者的性能优化手段已经不多了">
+  <meta property="og:description" content="留给开发者的性能优化手段已经不多了">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-13T16:13:46+08:00">
+    <meta property="article:modified_time" content="2024-10-13T16:13:46+08:00">
+
+  <meta itemprop="name" content="工具链极度内卷，留给开发者的性能优化手段已经不多了">
+  <meta itemprop="description" content="留给开发者的性能优化手段已经不多了">
+  <meta itemprop="datePublished" content="2024-10-13T16:13:46+08:00">
+  <meta itemprop="dateModified" content="2024-10-13T16:13:46+08:00">
+  <meta itemprop="wordCount" content="56">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="工具链极度内卷，留给开发者的性能优化手段已经不多了">
+  <meta name="twitter:description" content="留给开发者的性能优化手段已经不多了">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        前端小茶馆
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">工具链极度内卷，留给开发者的性能优化手段已经不多了</h1>
+      
+      <p class="tracked">
+        By <strong>蚊子</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-10-13T16:13:46+08:00">October 13, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray"><p>随着各种工具链的完善，用户硬件设备和带宽的提升，之前的一些性能问题也不再是问题，而且很多优化工作，脚手架工具链等都已经帮我们做好了，开发者只需聚焦在业务层面即可。</p>
+<p>每当答辩或者面试时，聊到性能优化时，很多人包括我在内，都不知道该说些什么，这些优化工作都让脚手架底层和框架本身做完了。除非一些特定的业务场景，可能会用到特殊的优化手段。</p>
+<p>大概在 10 几年前，IE6、IE7 等还大行其道，各个浏览器的标准还不统一，工具链和脚手架也不像现在这么丰富。为了给用户提供更好体验，前端开发者在性能优化上做了很多工作，包括但不限于：</p>
+<ol>
+<li>雪碧图：将各种小图拼成一个大图，减少 HTTP 请求次数，提升加载速度；</li>
+<li>图片懒加载：监听页面滚动事件，判断图片是否可见再进行加载；</li>
+<li>压缩静态资源：通过压缩和合并静态资源，减少请求体积；</li>
+<li>减少重绘和重排：重排和重绘是浏览器中相对比较耗时的动作，应尽可能减少这些操作，不过现在似乎很少关注这个了；</li>
+<li>事件委托：将多个子元素的事件，统一挂载到父级元素上；</li>
+<li>CSS 放前面，JavaScript 放后面；</li>
+</ol>
+<p>看到这些优化措施，是不是感到很亲切。不过很多工作脚手架都帮我们做好了。比如小图会自动编译为 Base64；想要首屏速度，可以使用 Next.js 或 Nuxt.js 等服务端渲染框架；脚手架配置麻烦？从 grunt 到 gulp，然后再到 rollup 和 webpack，现在又有了 vite 和 Turbopack。有些工具编译起来太慢，再用 Rust 重写一次。</p>
+<p>想要拆分代码？React 和 webpack 已经帮忙做了；想图片懒加载，但监听滚动事件不好判断？好，给到<code>getBoundingClientRect()</code>和<code>IntersectionObserver()</code>；事件挂载太多？React 框架中的事件本身就挂载在根节点上。等等。</p>
+<p>同时，服务端领域也不甘寂寞，相继出现了 Node.js、Deno 和 Bun。有的号称天然支持 typescript，有的声明自己是一体式解决方案、编译快；有的是起步早、生态好。</p>
+<p>各个工具和类库，也都在互相吸引对方的优点，尽可能地提升自己的优势，帮助开发者更好、更快地完成工作。</p>
+<p>可是自己作为开发者，总是想做出点啥性能优化的措施呀，要不然答辩和面试不好回答呀。说前面的那些？工具链和框架已经帮忙做好了，而且也有比较成熟的解决方案了，即便用上解决了问题，总感觉还是差点意思，不像是自己的功劳。那还能说点啥呢？</p>
+<p>大致是从两个方面开始思考：</p>
+<ol>
+<li>虽然现在市面上也有不少类似的框架，但我实现的某一点上，他们就没有，或者即便他们这些框架有，性能和可用性上也比不过我的；</li>
+<li>特定场景里的需求：大部分框架都是普遍性的，那我特定场景里的需求，他们肯定没有实现；我就基于我这个独有的场景实现一些措施；</li>
+</ol>
+<p>第 2 种情形通常都有场景壁垒，只有在指定的运行环境或者指定的业务中，才可能会出现一些优化措施。正因为没有普适性，才能做出一些意想不到的性能优化措施。</p>
+<p>工具链做得更好、更多，运行起来更快，本身是为了给开发者更好地使用体验。但相对地，留给开发者的性能优化手段已经不多了。而单纯地讲业务，又体现不出自身技术的深度。开发者就得需要寻找其他方面来体现自己了。</p>
+<p>想参与讨论，或者查看更多优质的文章：</p>
+<p><a href="https://www.xiabingbao.com/post/fe/fighting-slavrt.html">工具链极度内卷，留给开发者的性能优化手段已经不多了 - 蚊子的前端博客</a></p>
+
+    </div>
+
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://wenzi0github.github.io/" >
+    &copy;  前端小茶馆 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?f6b1b97f6a69181573a62aa99207eaab";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+  
+
+  </body>
+</html>

@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wenzi0github.github.io/posts/2024-10-10-deno2/</loc>
-    <lastmod>2024-10-10T16:13:46+08:00</lastmod>
-  </url><url>
     <loc>https://wenzi0github.github.io/posts/</loc>
-    <lastmod>2024-10-10T16:13:46+08:00</lastmod>
+    <lastmod>2024-10-13T16:13:46+08:00</lastmod>
   </url><url>
     <loc>https://wenzi0github.github.io/</loc>
+    <lastmod>2024-10-13T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-13-react-more-tag/</loc>
+    <lastmod>2024-10-13T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-14-fe-fighting/</loc>
+    <lastmod>2024-10-13T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-11-sad/</loc>
+    <lastmod>2024-10-11T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-11-my-blog/</loc>
+    <lastmod>2024-10-11T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-10-deno2/</loc>
     <lastmod>2024-10-10T16:13:46+08:00</lastmod>
   </url><url>
-    <loc>https://wenzi0github.github.io/posts/2024-10-09-swr/</loc>
+    <loc>https://wenzi0github.github.io/posts/2024/10-09-swr/</loc>
     <lastmod>2024-10-09T16:13:46+08:00</lastmod>
   </url><url>
-    <loc>https://wenzi0github.github.io/posts/2024-10-08-start/</loc>
+    <loc>https://wenzi0github.github.io/about/</loc>
+    <lastmod>2024-10-08T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-08-start/</loc>
     <lastmod>2024-10-08T16:13:46+08:00</lastmod>
   </url><url>
     <loc>https://wenzi0github.github.io/categories/</loc>
