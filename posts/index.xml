@@ -51,11 +51,32 @@
       <description>仅需一行代码，就可以简化项目中数据请求的逻辑</description>
     </item>
     <item>
-      <title>第一篇文章</title>
-      <link>https://wenzi0github.github.io/posts/2024/10-08-start/</link>
-      <pubDate>Tue, 08 Oct 2024 16:13:46 +0800</pubDate>
-      <guid>https://wenzi0github.github.io/posts/2024/10-08-start/</guid>
-      <description>文章描述信息</description>
+      <title>React 的 useEffect 的一些使用场景和技巧</title>
+      <link>https://wenzi0github.github.io/posts/2024/09-24-react-usestate/</link>
+      <pubDate>Tue, 24 Sep 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/09-24-react-usestate/</guid>
+      <description>useEffect()是最常用的hooks之一，一起来看下它的使用场景！</description>
+    </item>
+    <item>
+      <title>前端趣闻之 JavaScript 语言的诞生和发展</title>
+      <link>https://wenzi0github.github.io/posts/2024/09-20-js-history/</link>
+      <pubDate>Fri, 20 Sep 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/09-20-js-history/</guid>
+      <description>我们以为前端还很年轻，其实JavaScript语言也快30岁了</description>
+    </item>
+    <item>
+      <title>如何合并同一接口的相同参数的请求</title>
+      <link>https://wenzi0github.github.io/posts/2024/09-13-merge-same-request/</link>
+      <pubDate>Fri, 13 Sep 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/09-13-merge-same-request/</guid>
+      <description>通过合并同一接口中具有相同参数的多次请求，减少服务器负载，提升响应效率，实现资源高效利用</description>
+    </item>
+    <item>
+      <title>高考毕业10年后的我活成了</title>
+      <link>https://wenzi0github.github.io/posts/2019/06-03-college/</link>
+      <pubDate>Mon, 03 Jun 2019 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2019/06-03-college/</guid>
+      <description>岁月走过不小心踩伤了受了伤的心尖，痛、始终不曾明灭的萦绕着苍白憔悴的思念。是否前世我淡薄寡怜了你一世的情愫？岁月走过光阴的沧海，遗落了一路的伤碎桑田心愿，在年岁风烛蚕食里是否还有痕迹？</description>
     </item>
   </channel>
 </rss>
