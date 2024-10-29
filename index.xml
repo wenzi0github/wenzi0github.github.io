@@ -6,8 +6,29 @@
     <description>Recent content on 前端小茶馆</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2024 16:13:46 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2024 16:13:46 +0800</lastBuildDate>
     <atom:link href="https://wenzi0github.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 JavaScript 如何判断变量是否为空</title>
+      <link>https://wenzi0github.github.io/posts/2024/10-22-is-param-empty/</link>
+      <pubDate>Tue, 22 Oct 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/10-22-is-param-empty/</guid>
+      <description>日常业务中我们经常需要判断变量是否为空，我在这里封装了一个方法进行判断！</description>
+    </item>
+    <item>
+      <title>不要再手动拼接 URL 参数，请使用 URLSearchParams</title>
+      <link>https://wenzi0github.github.io/posts/2024/10-15-url-search-params/</link>
+      <pubDate>Tue, 15 Oct 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/10-15-url-search-params/</guid>
+      <description>浏览器原生了实现 URLSearchParams，极大地简化了 URL 参数的处理！</description>
+    </item>
+    <item>
+      <title>使用 NodeJs 向百度资源推送链接</title>
+      <link>https://wenzi0github.github.io/posts/2024/10-15-send-msg-to-baidu/</link>
+      <pubDate>Tue, 15 Oct 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/10-15-send-msg-to-baidu/</guid>
+      <description>如何使用NodeJs快速向百度提交页面链接</description>
+    </item>
     <item>
       <title>在 React 中显示多个标签，超出省略并可以 hover 显示更多</title>
       <link>https://wenzi0github.github.io/posts/2024/10-13-react-more-tag/</link>
