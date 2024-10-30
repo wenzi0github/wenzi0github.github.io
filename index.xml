@@ -6,8 +6,15 @@
     <description>Recent content on 前端小茶馆</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2024 16:13:46 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2024 16:13:46 +0800</lastBuildDate>
     <atom:link href="https://wenzi0github.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从 Axios 源码分析如何支持 fetch 方法的</title>
+      <link>https://wenzi0github.github.io/posts/2024/10-29-axios-fetch/</link>
+      <pubDate>Tue, 29 Oct 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/10-29-axios-fetch/</guid>
+      <description>数据请求库Axios源码中，是如何fetch方法的</description>
+    </item>
     <item>
       <title>在 JavaScript 如何判断变量是否为空</title>
       <link>https://wenzi0github.github.io/posts/2024/10-22-is-param-empty/</link>
@@ -98,6 +105,13 @@
       <pubDate>Fri, 13 Sep 2024 16:13:46 +0800</pubDate>
       <guid>https://wenzi0github.github.io/posts/2024/09-13-merge-same-request/</guid>
       <description>通过合并同一接口中具有相同参数的多次请求，减少服务器负载，提升响应效率，实现资源高效利用</description>
+    </item>
+    <item>
+      <title>使用 React 实现 todo list 的 curd 操作</title>
+      <link>https://wenzi0github.github.io/posts/2024/09-06-react-todo-list/</link>
+      <pubDate>Fri, 06 Sep 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/09-06-react-todo-list/</guid>
+      <description>项目 todo list 能够帮助我们快速熟悉 React 框架！</description>
     </item>
     <item>
       <title>高考毕业10年后的我活成了</title>
