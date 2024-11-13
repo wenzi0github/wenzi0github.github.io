@@ -6,8 +6,22 @@
     <description>Recent content in Posts on 前端小茶馆</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Oct 2024 16:13:46 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 16:13:46 +0800</lastBuildDate>
     <atom:link href="https://wenzi0github.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 年终于是增加了 2 天的假期</title>
+      <link>https://wenzi0github.github.io/posts/2024/11-12-holiday/</link>
+      <pubDate>Tue, 12 Nov 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/11-12-holiday/</guid>
+      <description>好事儿，好事儿！</description>
+    </item>
+    <item>
+      <title>如何手写 Array 的 map 方法</title>
+      <link>https://wenzi0github.github.io/posts/2024/11-03-array-map/</link>
+      <pubDate>Sun, 03 Nov 2024 16:13:46 +0800</pubDate>
+      <guid>https://wenzi0github.github.io/posts/2024/11-03-array-map/</guid>
+      <description>手动实现map方法，了解其内部原理！</description>
+    </item>
     <item>
       <title>从 Axios 源码分析如何支持 fetch 方法的</title>
       <link>https://wenzi0github.github.io/posts/2024/10-29-axios-fetch/</link>

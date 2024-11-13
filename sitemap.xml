@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wenzi0github.github.io/posts/</loc>
-    <lastmod>2024-10-29T16:13:46+08:00</lastmod>
+    <loc>https://wenzi0github.github.io/posts/2024/11-12-holiday/</loc>
+    <lastmod>2024-11-12T16:13:46+08:00</lastmod>
   </url><url>
-    <loc>https://wenzi0github.github.io/posts/2024/10-29-axios-fetch/</loc>
-    <lastmod>2024-10-29T16:13:46+08:00</lastmod>
+    <loc>https://wenzi0github.github.io/posts/</loc>
+    <lastmod>2024-11-12T16:13:46+08:00</lastmod>
   </url><url>
     <loc>https://wenzi0github.github.io/</loc>
+    <lastmod>2024-11-12T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/11-03-array-map/</loc>
+    <lastmod>2024-11-03T16:13:46+08:00</lastmod>
+  </url><url>
+    <loc>https://wenzi0github.github.io/posts/2024/10-29-axios-fetch/</loc>
     <lastmod>2024-10-29T16:13:46+08:00</lastmod>
   </url><url>
     <loc>https://wenzi0github.github.io/posts/2024/10-22-is-param-empty/</loc>
